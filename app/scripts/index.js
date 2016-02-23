@@ -38,15 +38,32 @@ $(document).ready(function() {
     var d = new Date();
     var year = d.getFullYear();
     var month = d.getMonth();
+    var start = 0;
     var monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var monthsNum = [30, 28, 31, 30, 31, 30, 31, 31, 30, 30, 30, 30]
-
-    console.log(monthsArray[])
+    var monthObj = {
+      "January": 30,
+      "February": 28,
+      "March": 31,
+      "April": 30,
+      "May": 31,
+      "June": 30,
+      "July": 31,
+      "August": 31,
+      "September": 30,
+      "October": 30,
+      "November": 30,
+      "December": 30
+    }
     // console.log(monthObj.(monthsArray[month])
     monthYr.textContent = monthsArray[month] + " " + "."+" " + year;
 
-
-    $('.dates').append('<div>Hello</div>');
+    for (var i=0; i<monthObj.length; i++){
+      console.log(monthObj.length);
+    }
+    // $.each(monthObj, function(key, value){
+    //   console.log(key.);
+    // })
+    // $('.dates').append('<div>Hello</div>');
 
 
 
